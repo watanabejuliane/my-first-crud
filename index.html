@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first CRUD</title>
+</head>
+<body>
+  <h1>My first CRUD</h1>
+  
+  <h2>Add Item</h2>
+  <form id="addItemForm">
+    <input type="text" id="name" required />
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>Edit Item</h2>
+  <form id="editItemForm" style="display: none;">
+    <input type="hidden" id="edit-id" />
+    <input type="text" id="edit-name" required />
+    <button type="submit">Update</button>
+    <button type="button" onclick="cancelEdit()">Cancel</button>
+  </form>
+
+  <h2>Items List</h2>
+  <ul id="itemsList"></ul>
+
+  <script src="dist/app.js"></script>
+</body>
+</html>

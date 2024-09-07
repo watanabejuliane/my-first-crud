@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                // Compilar para ECMAScript 6
+      "module": "commonjs",           // Usar o sistema de módulos CommonJS
+      "strict": true,                 // Ativar verificação estrita de tipos
+      "esModuleInterop": true,        // Habilitar a interoperabilidade entre módulos ES e CommonJS
+      "outDir": "./dist"              // Diretório de saída para arquivos compilados
+    },
+    "include": ["src/**/*"]           // Incluir todos os arquivos TypeScript da pasta src
+  }
+  
