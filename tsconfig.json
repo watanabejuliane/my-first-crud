@@ -1,11 +1,16 @@
 {
-    "compilerOptions": {
-      "target": "ES6",                // Compilar para ECMAScript 6
-      "module": "commonjs",           // Usar o sistema de módulos CommonJS
-      "strict": true,                 // Ativar verificação estrita de tipos
-      "esModuleInterop": true,        // Habilitar a interoperabilidade entre módulos ES e CommonJS
-      "outDir": "./dist"              // Diretório de saída para arquivos compilados
-    },
-    "include": ["src/**/*"]           // Incluir todos os arquivos TypeScript da pasta src
-  }
-  
+  "compilerOptions": {
+    "target": "ES6",                 // Compilar para ECMAScript 6
+    "module": "commonjs",            // Usar o sistema de módulos CommonJS
+    "strict": true,                  // Ativar verificação estrita de tipos
+    "esModuleInterop": true,         // Habilitar a interoperabilidade entre módulos ES e CommonJS
+    "outDir": "./dist",              // Diretório de saída para arquivos compilados
+    "types": ["cypress"],            // Adicionar tipos do Cypress
+    "skipLibCheck": true,            // Pular a verificação de bibliotecas para melhorar a velocidade de compilação
+    "forceConsistentCasingInFileNames": true // Garante a consistência no uso de maiúsculas/minúsculas em imports
+  },
+  "include": [
+    "src/**/*",                      // Incluir todos os arquivos TypeScript da pasta src
+    "cypress/e2e/**/*.cy.ts"         // Incluir todos os arquivos de teste do Cypress
+  ]
+}
