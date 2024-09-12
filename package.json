@@ -1,7 +1,7 @@
 {
   "name": "my-first-crud",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta é uma atividade do estágio supervisionado onde desenvolvi meu primeiro CRUD (Create, Read, Update, Delete) utilizando TypeScript, Node.js e SQLite. A aplicação permite adicionar, editar e excluir itens em uma base de dados SQLite, com uma interface web simples para interação.",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
